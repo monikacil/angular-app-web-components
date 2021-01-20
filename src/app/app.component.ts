@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
+  showModal = false;
+  message = 'Przykładowy komponent okna dialogowego w aplikacji Angular.';
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
+  handleClick () {
+    alert('Zdarzenie po kliknięciu przycisku Confirm')
+  }
 }
